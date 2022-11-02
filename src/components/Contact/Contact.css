@@ -1,0 +1,29 @@
+.Contact{
+    padding-top: 2rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.Contact ul{
+    list-style: none;
+    display: flex;
+}
+.contactLabel{
+    font-size: 2rem;
+    text-align: left;
+    justify-content: center;
+    width: 70vw;
+}
+a{
+    padding-right: 1.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--warmNeonGreen);
+}
+a:hover {
+    text-shadow: 0 0 5px var(--warmNeonGreen), 0 0 10px var(--warmNeonGreen), 0 0 15px var(--warmNeonGreen), 0 0 20px var(--darkGreen),
+        0 0 35px var(--darkNeonGreen), 0 0 40px var(--darkNeonGreen), 0 0 50px var(--darkNeonGreen), 0 0 75px var(--darkNeonGreen);
+
+}

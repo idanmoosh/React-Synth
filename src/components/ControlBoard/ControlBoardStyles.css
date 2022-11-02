@@ -1,0 +1,16 @@
+.controlBoard{
+    padding-left: 2vw;
+}
+
+.MuiFormControl-root{
+    display: flex;
+    flex-direction: row;
+    border-radius: 2vw;
+}
+
+.MuiFormGroup-root{
+    width: 30vw;
+}
+.MuiSlider-root{
+    width: 30vw;
+}

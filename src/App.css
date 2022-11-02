@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Rubik:wght@300;400;600&display=swap');
+
+:root{
+
+
+  --darkBlack: #010B12;
+  --darkGrey: #1E1F21;
+  --darkGreen: #0C8900;
+  --darkNeonGreen: #2BC20E;
+  --warmNeonGreen: #9CFF00;
+  --brightNeonGreen: #39FF13;
+  --logoFont:'Neonderthaw',
+    cursive;
+  --textFont: 'Rubik',
+    sans-serif;
+
+}
+
+.App {
+  /* Reset config */
+
+
+  text-align: center;
+  background-color: var(--darkBlack);
+  color: var(--warmNeonGreen);
+  padding: 1vw;
+  height: 100vh;
+    background: repeating-linear-gradient(45deg,
+        var(--darkGrey) 0%,
+        var(--darkGrey)2%,
+        var(--darkBlack) 0%,
+        var(--darkBlack)50%) 0 / 30px 30px;
+
+}
+header{
+  display: flex;
+  background-color: var(--darkBlack);
+  width: 100%;
+  padding: 3vh;
+  justify-content: space-between;
+  border: 2px solid var(--darkGrey);
+  border-radius: 2vw;
+}
+header h1{
+  margin: 0;
+  font-size: 7vh;
+  font-family: var(--logoFont);
+  animation: neon 2s ease-in infinite alternate;
+}
+section{
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px var(--brightNeonGreen), 0 0 20px var(--brightNeonGreen), 0 0 30px var(--brightNeonGreen), 0 0 40px var(--darkGreen),
+      0 0 70px var(--warmNeonGreen), 0 0 80px var(--warmNeonGreen), 0 0 100px var(--warmNeonGreen), 0 0 150px var(--warmNeonGreen);
+  }
+
+  to {
+    text-shadow: 0 0 5px var(--warmNeonGreen), 0 0 10px var(--warmNeonGreen), 0 0 15pxvar(--warmNeonGreen), 0 0 20px var(--darkGreen),
+      0 0 35px var(--darkNeonGreen), 0 0 40px var(--darkNeonGreen), 0 0 50px var(--darkNeonGreen), 0 0 75px var(--darkNeonGreen);
+  }
+}
+
